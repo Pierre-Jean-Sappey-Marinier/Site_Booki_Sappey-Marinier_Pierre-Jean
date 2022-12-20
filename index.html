@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+    </style>
     <title>Document</title>
 </head>
 
@@ -11,12 +21,12 @@
     <header>
         <section class="presentation">
             <div class="title">
-                <img src="/Images Booki/logo/Booki@3x.png">
+                <!-- <img src="/Images Booki/logo/Booki.png">-->
             </div>
 
             <div class="link_hebergement_marseilles">
                 <p><a href="#hébergement_marseilles">
-                        Hébergement
+                        Hébergements
                     </a></p>
             </div>
 
@@ -28,22 +38,74 @@
 
     </header>
 
-    <section class="Button_search">
+    <section class="button_search">
 
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 
         <h2>En plein centre-ville ou en pleine nature</h2>
 
-        <div id="button">
+        <div class="button">
+            <div class="icon_localisation">
+                <img src="/Images Booki/composants/Vector.png">
+            </div>
+            <div class="search">
+                <input type="search" id="site-search" name="searching">
+            </div>
 
+            <div class="search_button">
+                <button type="submit"><i class="fa_search">Rechercher</i></button>
+            </div>
+        </div>
 
+    </section>
+
+    <section class="filtres">
+
+        <div class="filter">
+            <p>
+                Filtres
+            </p>
+        </div>
+
+        <div class="economique">
+            <img width="22px" height="16.26px" src="/Images Booki/composants/Vectoreconomique.png">
+            <p> Economique </p>
+        </div>
+
+        <div class="familial">
+            <img width="13.44px" height="22px" src="/Images Booki/composants/Vectorfamilial.png">
+            <p> Familial </p>
+        </div>
+
+        <div class="romantique">
+            <img width="22px" height="18.33px" src="/Images Booki/composants/Vectorromantique.png">
+            <p> Romantique </p>
+        </div>
+
+        <div class="animaux_autorisés">
+            <img width="22px" height="22px" src="/Images Booki/composants/Vectoranimaux.png">
+            <p> Animaux autorisés </p>
         </div>
 
 
+    </section>
+
+    <section class="information">
+
+
+        <img width="4px" height="10px" src="/Images Booki/composants/Vectori.png">
+
+        <p> Plus de 500 logements sont disponibles dans cette ville </p>
+
 
     </section>
 
+    <section class="rectangle_18">
+
+        <h2> Hébergements à Marseilles </h2>
+
     </section>
+
 
 </body>
 

@@ -1,0 +1,298 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    position: relative;
+    max-width: 1400px;
+}
+
+
+
+
+.presentation {
+
+
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    background: url('/Images Booki/logo/Booki.png');
+    flex: 1;
+    background-repeat: no-repeat;
+    margin-top: 44px;
+    margin-left: 55px;
+    background-size: 61.09px;
+    width: 61.09px;
+    height: 19px;
+
+
+}
+
+.link_hebergement_marseilles {
+    /*flex: 2;*/
+    margin-top: 48px;
+    margin-right: 207px;
+
+}
+
+.link_hebergement_marseilles :hover {
+    color: #0065FC;
+
+}
+
+.link_activités_marseilles {
+    /*  flex: 3;*/
+    margin-top: 48px;
+    margin-right: 77px;
+}
+
+.link_activités_marseilles :hover {
+    color: #0065FC;
+
+}
+
+.button_search h1 {
+    position: absolute;
+    margin-top: 126px;
+    margin-left: 55px;
+}
+
+.button_search h2 {
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 55px;
+}
+
+.button {
+
+    display: flex;
+    flex-direction: row;
+}
+
+.icon_localisation {
+    background-color: #D9D9D9;
+    position: absolute;
+    margin-top: 215px;
+    margin-left: 73px;
+    padding-top: 16px;
+    padding-bottom: 15px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.search {
+    margin-top: 215px;
+    margin-left: 122px;
+
+
+}
+
+#site-search {
+    height: 49px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    border-color: #D9D9D9;
+    border-style: solid;
+}
+
+.search_button {
+    margin-top: 214px;
+    margin-left: 123 px;
+    border: 0;
+    background-color: #0065FC;
+}
+
+.fa_search {
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+
+    line-height: 49px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    backface-visibility: hidden;
+    background-color: #405cf5;
+    border-style: solid;
+    border-width: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Raleway';
+    font-size: 100%;
+    border: none;
+    outline: none;
+    padding: 0;
+
+
+
+
+
+    outline: none;
+    overflow: hidden;
+    padding: 16px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transform: translateZ(0);
+    transition: all .2s,
+        box-shadow .08s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+}
+
+
+
+
+
+.filtres {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 914px;
+    height: 50px;
+    margin-top: 32px;
+    margin-left: 62px;
+    text-align: center;
+    align-items: center;
+    padding: ;
+}
+
+.filtres div:hover {
+    background-color: #DEEBFF;
+}
+
+.filter {
+    border: 0;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.economique {
+    display: flex;
+    flex-direction: row;
+
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+
+
+
+
+}
+
+.economique p {
+    padding-left: 10px;
+}
+
+.familial {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+}
+
+.familial p {
+    padding-left: 10px;
+}
+
+.romantique {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+}
+
+.romantique p {
+    padding-left: 10px;
+}
+
+.animaux_autorisés {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+}
+
+.animaux_autorisés p {
+    padding-left: 10px;
+}
+
+.information {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 69px;
+    margin-top: 57px;
+    align-items: center;
+}
+
+
+
+
+.information img {
+    padding: 7px 10px 7px 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+}
+
+.information p {
+    padding-left: 10px;
+}
+
+
+.rectangle_18 {
+    position: relative;
+    margin-top: 39px;
+    margin-left: 50px;
+    background-color: #D9D9D9;
+    width: 880px;
+    height: 626px;
+}
+
+.rectangle_18 h2 {
+    position: absolute;
+    left: 4.55%;
+
+    top: 6.71%;
+    bottom: 89.14%;
+}
