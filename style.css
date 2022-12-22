@@ -1,31 +1,38 @@
-html {
-    box-sizing: border-box;
-}
-
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
+}
+
+a,
+u {
+    text-decoration: none;
+    color: black;
 }
 
 body {
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     position: relative;
     max-width: 1400px;
 }
 
-
-
-
 .presentation {
-
-
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-top: 48px;
+    margin-right: 67px;
 }
 
-.title {
-    background: url('/Images Booki/logo/Booki.png');
+.liens {
+    display: flex;
+    box-sizing: content-box;
+}
+
+/* .title {
+    background: url('/images_booki/logo/Booki.png');
     flex: 1;
     background-repeat: no-repeat;
     margin-top: 44px;
@@ -33,49 +40,83 @@ body {
     background-size: 61.09px;
     width: 61.09px;
     height: 19px;
+} */
+
+.title img {
+    margin-left: 55px;
+
+    width: 61.09px;
+    height: 19px;
+}
+
+
+.link_hebergement_marseilles {
+
+    position: relative;
+    font-weight: 500;
+    /*border-top: 5px;
+    border-top-style: solid;
+    border-top-color: red;*/
+    padding-right: 57px;
+    box-sizing: content-box;
+
+
 
 
 }
 
-.link_hebergement_marseilles {
-    /*flex: 2;*/
-    margin-top: 48px;
-    margin-right: 207px;
-
+.ink_hebergement_marseilles::before {
+    content: '';
+    position: absolute;
+    background-color: pink;
+    width: 30%;
+    height: 3px;
+    top: 0;
+    left: 0;
 }
 
 .link_hebergement_marseilles :hover {
     color: #0065FC;
+    border-color: #0065FC;
 
 }
 
 .link_activités_marseilles {
     /*  flex: 3;*/
-    margin-top: 48px;
-    margin-right: 77px;
+
+    font-weight: 500;
+
 }
 
 .link_activités_marseilles :hover {
     color: #0065FC;
-
 }
 
 .button_search h1 {
     position: absolute;
     margin-top: 126px;
     margin-left: 55px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
 }
 
 .button_search h2 {
     position: absolute;
     margin-top: 160px;
     margin-left: 55px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .button {
 
     display: flex;
     flex-direction: row;
+    margin-left: -20px;
+    font-weight: 700;
+
 }
 
 .icon_localisation {
@@ -110,6 +151,7 @@ body {
     text-align: center;
     border-color: #D9D9D9;
     border-style: solid;
+    outline: none;
 }
 
 .search_button {
@@ -117,47 +159,25 @@ body {
     margin-left: 123 px;
     border: 0;
     background-color: #0065FC;
+
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
 }
 
-.fa_search {
-    border: none;
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
+.searchs {
 
-    line-height: 49px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    backface-visibility: hidden;
-    background-color: #405cf5;
-    border-style: solid;
-    border-width: 0;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
+    width: 100px;
+    height: 21px;
+
     font-family: 'Raleway';
-    font-size: 100%;
-    border: none;
-    outline: none;
-    padding: 0;
-
-
-
-
-
-    outline: none;
-    overflow: hidden;
-    padding: 16px;
-    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
     text-align: center;
-    text-transform: none;
-    transform: translateZ(0);
-    transition: all .2s,
-        box-shadow .08s ease-in;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: 100%;
+
 }
 
 
@@ -174,10 +194,23 @@ body {
     margin-left: 62px;
     text-align: center;
     align-items: center;
-    padding: ;
+    gap: 32px;
+
 }
 
-.filtres div:hover {
+.filtres div.economique:hover {
+    background-color: #DEEBFF;
+}
+
+.filtres div.familial:hover {
+    background-color: #DEEBFF;
+}
+
+.filtres div.romantique:hover {
+    background-color: #DEEBFF;
+}
+
+.filtres div.animaux_autorisés:hover {
     background-color: #DEEBFF;
 }
 
@@ -186,76 +219,72 @@ body {
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
+    padding-right: 32px;
+
 }
+
+
 
 .economique {
     display: flex;
     flex-direction: row;
 
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 14 20 14 20;
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
     border: 2px solid #D9D9D9;
-    border-radius: 25px;
+    border-radius: 55px;
+    gap: 10px;
+
 
 
 
 
 }
 
-.economique p {
-    padding-left: 10px;
-}
 
 .familial {
     display: flex;
     flex-direction: row;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 14 20 14 20;
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
+    gap: 10px;
 }
 
-.familial p {
-    padding-left: 10px;
-}
 
 .romantique {
     display: flex;
     flex-direction: row;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 14 20 14 20;
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
+    gap: 10px;
 }
 
-.romantique p {
-    padding-left: 10px;
-}
+
 
 .animaux_autorisés {
     display: flex;
     flex-direction: row;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 14 20 14 20;
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
+    gap: 10px;
+    flex-shrink: 0;
+
 }
 
-.animaux_autorisés p {
-    padding-left: 10px;
-}
 
 .information {
     display: flex;
@@ -264,35 +293,260 @@ body {
     margin-left: 69px;
     margin-top: 57px;
     align-items: center;
+    gap: 10px;
 }
 
 
 
 
 .information img {
-    padding: 7px 10px 7px 10px;
+    box-sizing: content-box;
+    border-style: solid;
+    padding: 7 10 7 10;
+
     border: 1px solid #D9D9D9;
     border-radius: 50%;
 }
 
 .information p {
-    padding-left: 10px;
+    display: flex;
+    gap: 10px;
+    font-weight: 400;
 }
 
 
-.rectangle_18 {
-    position: relative;
+
+
+
+
+
+
+
+
+
+
+.hôtel_marseilles {
+    display: flex;
+
+    gap: 40px;
     margin-top: 39px;
+}
+
+
+#hébergement_marseilles {
+
+    position: relative;
+
     margin-left: 50px;
-    background-color: #D9D9D9;
+    background: #F2F2F2;
     width: 880px;
     height: 626px;
+    border-radius: 20px;
 }
 
-.rectangle_18 h2 {
+#hébergement_marseilles h2 {
+    display: flex;
     position: absolute;
-    left: 4.55%;
+    margin-left: 40px;
+    margin-top: 42px;
 
-    top: 6.71%;
-    bottom: 89.14%;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+
+
+.six_rectangles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.canebière {
+    margin-top: 91px;
+    margin-bottom: -54px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    width: 246px;
+    height: 199px;
+    position: relative;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.307);
+}
+
+
+
+.photo img {
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+
+    align-items: center;
+    object-fit: cover;
+}
+
+
+
+.canebière span {
+    margin-left: 16px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+}
+
+.canebière p {
+    font-weight: 400;
+    margin-left: 16px;
+    margin-top: 7px;
+}
+
+.star {
+    padding: 1px;
+    margin-left: 16px;
+    margin-top: 7px;
+}
+
+
+
+
+
+#populaires {
+
+    display: flex;
+    flex-direction: column;
+    background: #F2F2F2;
+    width: 420px;
+    height: 625px;
+    border-radius: 20px;
+    justify-content: space-evenly
+}
+
+#populaires h2 {
+    /* align-items: flex-start; */
+    /* flex-basis: 30px; */
+    position: relative;
+    margin-left: 37px;
+
+
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.trois_rectangles {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.matin {
+    display: flex;
+    flex-direction: row;
+
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    width: 343px;
+    height: 144px;
+    position: relative;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.307);
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.matin .photo img {
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+
+    align-items: center;
+    object-fit: cover;
+}
+
+
+
+.matin span {
+
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    margin-top: 16px;
+}
+
+.matin p {
+
+    font-weight: 400;
+    margin-left: 16px;
+    margin-top: 7px;
+}
+
+.text .star {
+
+    padding: 1px;
+    margin-left: 16px;
+    margin-top: 50px;
+}
+
+/* ACTIVITES */
+
+.activité_title h1 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin-left: 50px;
+    margin-top: 60px;
+    padding-bottom: 18.47px;
+}
+
+.activités {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+
+.activity {
+
+    position: relative;
+
+
+    background: #ffffff;
+    width: 302px;
+    height: 444.5px;
+    border-radius: 20px;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.307);
+
+}
+
+.lieux {
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 20px;
+    margin-left: 19px;
+}
+
+.image img {
+    box-sizing: border-box;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
