@@ -18,61 +18,50 @@ body {
     max-width: 1400px;
 }
 
+/* HEADER + NAV */
+
 .presentation {
+    position: relative;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin-top: 48px;
-    margin-right: 67px;
+
 }
+
 
 .liens {
     display: flex;
     box-sizing: content-box;
 }
 
-/* .title {
-    background: url('/images_booki/logo/Booki.png');
-    flex: 1;
-    background-repeat: no-repeat;
-    margin-top: 44px;
-    margin-left: 55px;
-    background-size: 61.09px;
-    width: 61.09px;
-    height: 19px;
-} */
+
+.logo {
+
+    padding-left: 55px;
+    padding-top: 44px;
+}
 
 .title img {
-    margin-left: 55px;
-
     width: 61.09px;
     height: 19px;
 }
 
+.liens {
+    display: flex;
+    gap: 67px;
+
+}
 
 .link_hebergement_marseilles {
 
     position: relative;
     font-weight: 500;
-    /*border-top: 5px;
+    border-top: 2px;
     border-top-style: solid;
-    border-top-color: red;*/
-    padding-right: 57px;
-    box-sizing: content-box;
+    border-top-color: red;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 44px;
 
-
-
-
-}
-
-.ink_hebergement_marseilles::before {
-    content: '';
-    position: absolute;
-    background-color: pink;
-    width: 30%;
-    height: 3px;
-    top: 0;
-    left: 0;
 }
 
 .link_hebergement_marseilles :hover {
@@ -82,9 +71,16 @@ body {
 }
 
 .link_activités_marseilles {
-    /*  flex: 3;*/
-
+    position: relative;
     font-weight: 500;
+    border-top: 2px;
+    border-top-style: solid;
+    border-top-color: red;
+    padding-left: 34.45px;
+    padding-right: 34.45px;
+    padding-top: 44px;
+    margin-right: 77px;
+
 
 }
 
@@ -92,82 +88,145 @@ body {
     color: #0065FC;
 }
 
+
+@media screen and (max-width: 768px) {
+    .presentation {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        padding-left: 0px;
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .liens {
+        display: flex;
+        padding-top: 48px;
+        justify-content: space-evenly;
+        padding-left: 33px;
+
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .link_hebergement_marseilles {
+        border-top: none;
+        padding-top: 0px;
+        padding-bottom: 23px;
+        border-bottom: 3px;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(0, 17, 255);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .link_activités_marseilles {
+        border-top: none;
+        padding-top: 0px;
+        padding-bottom: 23px;
+        border-bottom: 3px;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(0, 17, 255);
+    }
+
+}
+
+
+
+/* recherche */
+
 .button_search h1 {
-    position: absolute;
-    margin-top: 126px;
-    margin-left: 55px;
+    position: relative;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
+    margin-top: 63px;
+    margin-left: 55px;
 }
 
 .button_search h2 {
-    position: absolute;
-    margin-top: 160px;
-    margin-left: 55px;
+    position: relative;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    margin-top: 8px;
+    margin-left: 55px;
 }
 
 .button {
-
     display: flex;
     flex-direction: row;
-    margin-left: -20px;
     font-weight: 700;
-
+    margin-left: 55px;
 }
 
 .icon_localisation {
     background-color: #D9D9D9;
-    position: absolute;
-    margin-top: 215px;
-    margin-left: 73px;
-    padding-top: 16px;
-    padding-bottom: 15px;
-    padding-left: 18px;
-    padding-right: 18px;
+    position: relative;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 }
 
 .search {
-    margin-top: 215px;
-    margin-left: 122px;
+    position: relative;
 
 
 }
 
 #site-search {
+    position: relative;
     height: 49px;
-    padding-left: 10px;
-    padding-right: 10px;
+
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-    text-align: center;
+
     border-color: #D9D9D9;
     border-style: solid;
-    outline: none;
+
 }
 
 .search_button {
-    margin-top: 214px;
-    margin-left: 123 px;
+    position: relative;
+
+
     border: 0;
     background-color: #0065FC;
 
     font-size: 18px;
     line-height: 21px;
-    text-align: center;
+
 
 }
 
 .searchs {
-
+    position: relative;
     width: 100px;
     height: 21px;
 
@@ -176,22 +235,21 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-    text-align: center;
+
 
 }
 
 
 
-
+/* FILTRES */
 
 .filtres {
     position: relative;
     display: flex;
-    flex-direction: row;
-    width: 914px;
-    height: 50px;
-    margin-top: 32px;
-    margin-left: 62px;
+    flex-wrap: wrap;
+
+    padding-top: 46px;
+
     text-align: center;
     align-items: center;
     gap: 32px;
@@ -220,12 +278,14 @@ body {
     font-size: 17px;
     line-height: 20px;
     padding-right: 32px;
+    padding-left: 62px;
 
 }
 
 
 
 .economique {
+    position: relative;
     display: flex;
     flex-direction: row;
 
@@ -245,6 +305,7 @@ body {
 
 
 .familial {
+    position: relative;
     display: flex;
     flex-direction: row;
     padding: 14 20 14 20;
@@ -258,6 +319,7 @@ body {
 
 
 .romantique {
+    position: relative;
     display: flex;
     flex-direction: row;
     padding: 14 20 14 20;
@@ -272,6 +334,7 @@ body {
 
 
 .animaux_autorisés {
+    position: relative;
     display: flex;
     flex-direction: row;
     padding: 14 20 14 20;
@@ -287,13 +350,14 @@ body {
 
 
 .information {
+    position: relative;
     display: flex;
     flex-direction: row;
     position: relative;
-    margin-left: 69px;
-    margin-top: 57px;
+    padding-left: 69px;
     align-items: center;
     gap: 10px;
+    padding-top: 54px;
 }
 
 
@@ -332,6 +396,15 @@ body {
     margin-top: 39px;
 }
 
+@media screen and (max-width: 992px) {
+    .hôtel_marseilles {
+
+        flex-wrap: wrap;
+
+    }
+
+}
+
 
 #hébergement_marseilles {
 
@@ -346,7 +419,7 @@ body {
 
 #hébergement_marseilles h2 {
     display: flex;
-    position: absolute;
+    position: relative;
     margin-left: 40px;
     margin-top: 42px;
 
@@ -410,6 +483,8 @@ body {
     margin-top: 7px;
 }
 
+/* buttoncliquable */
+
 
 
 
@@ -422,22 +497,60 @@ body {
     width: 420px;
     height: 625px;
     border-radius: 20px;
-    justify-content: space-evenly
+    justify-content: space-evenly;
+
 }
 
-#populaires h2 {
+
+
+@media screen and (max-width: 992px) {
+    #populaires {
+
+        position: relative;
+        flex-direction: row;
+
+        /* justify-content: space-evenly; */
+
+        margin-left: 50px;
+        background: #5240c8;
+        width: 883px;
+        height: 278px;
+        border-radius: 20px;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+}
+
+
+
+
+.title22 {
     /* align-items: flex-start; */
     /* flex-basis: 30px; */
     position: relative;
+    justify-content: left;
+    align-items: flex-start;
+    align-self: flex-start;
+}
+
+.title22 h2 {
     margin-left: 37px;
-
-
-
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
+}
+
+@media screen and (max-width: 992px) {
+    .title22 {
+        align-items: baseline;
+
+        margin-top: -36px;
+        padding-top: -20px;
+    }
 }
 
 .trois_rectangles {
@@ -447,6 +560,16 @@ body {
     justify-content: center;
     align-items: center;
 
+
+
+}
+
+@media screen and (max-width: 992px) {
+    .trois_rectangles {
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
 }
 
 .matin {
@@ -455,8 +578,8 @@ body {
 
     background-color: #FFFFFF;
     border-radius: 20px;
-    width: 343px;
-    height: 144px;
+    /* width: 343px;
+    height: 144px; */
     position: relative;
 
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.307);
@@ -517,7 +640,9 @@ body {
 .activités {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    gap: 43px;
+    margin-left: 50px;
 
 }
 
@@ -550,3 +675,85 @@ body {
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
+
+/* FOOTER */
+
+footer {
+
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-top: 61px;
+    padding-right: 53px;
+    justify-content: center;
+
+
+}
+
+.bandeau {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 45px;
+    background: #F2F2F2;
+    width: 1339px;
+    height: 225px;
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .bandeau {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: baseline;
+        padding-left: 30px;
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .a_propos h1 {
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        padding-left: 0;
+        padding-top: 61px;
+        padding-right: 0;
+
+    }
+
+}
+
+
+
+.a_propos {
+    justify-content: space-evenly;
+
+}
+
+.a_propos h1 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+
+
+}
+
+.a_propos p {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 12px;
+}
+
+
+/* Breackpoint */
