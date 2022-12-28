@@ -575,63 +575,95 @@
     </div>
 
     <section class="activités">
-      <div class="activity">
-        <div class="image">
-          <img
-            width="302px"
-            height="389px"
-            alt="photo_1"
-            src="/images_booki/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-          />
-        </div>
+      <div class="liens_activity">
+        <a href="#">
+          <div class="activity">
+            <div class="image">
+              <img
+                alt="photo_1"
+                src="/images_booki/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+              />
+            </div>
 
-        <div class="lieux">
-          <p>Vieux-Port</p>
-        </div>
+            <div class="lieux">
+              <p>Vieux-Port</p>
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="activity">
-        <div class="image">
-          <img
-            width="302px"
-            height="389px"
-            alt="photo_1"
-            src="/images_booki/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
-          />
-        </div>
-        <div class="lieux">
-          <p>Fort de Pomègues</p>
-        </div>
+
+      <div class="liens_activity">
+        <a href="#">
+          <div class="activity">
+            <div class="image2">
+              <img
+                alt="photo_1"
+                src="/images_booki/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+              />
+            </div>
+            <div class="lieux">
+              <p>Fort de Pomègues</p>
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="activity">
-        <div class="image">
-          <img
-            width="302px"
-            height="389px"
-            alt="photo_1"
-            src="/images_booki/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-          />
-        </div>
-        <div class="lieux">
-          <p>Parc National des Calanques</p>
-        </div>
+
+      <div class="liens_activity">
+        <a href="#">
+          <div class="activity">
+            <div class="image">
+              <img
+                alt="photo_1"
+                src="/images_booki/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+              />
+            </div>
+            <div class="lieux">
+              <p>Parc National des Calanques</p>
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="activity">
-        <div class="image">
-          <img
-            width="302px"
-            height="389px"
-            alt="photo_1"
-            src="/images_booki/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg"
-          />
-        </div>
-        <div class="lieux">
-          <p>Notre-Dame-de-la-Garde</p>
-        </div>
+
+      <div class="liens_activity">
+        <a href="#">
+          <div class="activity">
+            <div class="image">
+              <img
+                alt="photo_1"
+                src="/images_booki/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+              />
+            </div>
+            <div class="lieux">
+              <p>Notre-Dame-de-la-Garde</p>
+            </div>
+          </div>
+        </a>
       </div>
     </section>
 
     <!-- FOOTER -->
 
+    <p></p>
+
+    <p id="demo"></p>
+    <script>
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+
+      var x = document.getElementById("demo");
+      x.innerHTML = w;
+    </script>
+
+    <script>
+      function winSize() {
+        console.log(`
+Inner Width: ${this.innerWidth}
+
+`);
+      }
+
+      winSize();
+    </script>
     <footer>
       <div class="bandeau">
         <div class="a_propos">
