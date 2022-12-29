@@ -89,6 +89,7 @@ body {
   border-top: 2px;
   border-top-style: solid;
 }
+/* MOBILE */
 
 @media screen and (max-width: 767px) {
   .presentation {
@@ -256,6 +257,7 @@ body {
   background-color: #0084ff;
   cursor: pointer;
 }
+/* MOBILE */
 
 @media screen and (max-width: 767px) {
   .button_search h1 {
@@ -354,16 +356,14 @@ body {
     flex-wrap: nowrap;
     padding-left: 20px;
   }
-}
 
-@media screen and (max-width: 991px) {
   .filter p {
     display: flex;
     padding-right: 10px;
   }
 }
 
-/* TELEPHONE */
+/* MOBILE */
 
 @media screen and (max-width: 767px) {
   .filtres {
@@ -376,23 +376,17 @@ body {
     /* height: 300px; */
     gap: 10px 10px;
   }
-}
 
-@media screen and (max-width: 767px) {
   .filter {
     display: flex;
     justify-content: flex-start;
     padding-left: 0;
   }
-}
 
-@media screen and (max-width: 767px) {
   .filter p {
     display: flex;
   }
-}
 
-@media screen and (max-width: 767px) {
   .e {
     align-items: center;
     padding: 14px 10px 14px 10px;
@@ -401,16 +395,13 @@ body {
     font-size: 15px;
     line-height: 16px;
   }
-}
 
-@media screen and (max-width: 767px) {
   .information {
     position: relative;
     padding: 20px;
     padding-top: 20px;
   }
 }
-
 /* SECTION MARSEILLES */
 
 .hôtel_marseilles {
@@ -504,6 +495,8 @@ body {
   padding-bottom: 8px;
 }
 
+/* TABLETTE */
+
 @media screen and (max-width: 991px) {
   #hébergement_marseilles {
     width: 100%;
@@ -525,6 +518,29 @@ body {
     align-items: stretch;
   }
 }
+
+/* MOBILE */
+
+@media screen and (max-width: 767px) {
+  #hébergement_marseilles {
+    width: 100%;
+    border-radius: 0px;
+    background-color: white;
+  }
+
+  .hôtel_marseilles {
+    flex-wrap: wrap-reverse;
+    padding-right: 0px;
+    padding-left: 0px;
+    gap: 00px;
+  }
+
+  .six_rectangles {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 /* POPULAIRE */
 
 #populaires {
@@ -595,6 +611,8 @@ body {
   object-fit: cover;
 }
 
+/* TABLETTE */
+
 @media screen and (max-width: 991px) {
   #populaires {
     display: flex;
@@ -624,6 +642,23 @@ body {
     padding-top: 34px;
     padding-left: 40px;
     padding-right: 40px;
+  }
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 767px) {
+  #populaires {
+  }
+
+  #populaires {
+    display: flex;
+    flex-direction: row;
+    background: #f2f2f2;
+    width: 100%;
+    border-radius: 0px;
+
+    align-items: stretch;
   }
 }
 
