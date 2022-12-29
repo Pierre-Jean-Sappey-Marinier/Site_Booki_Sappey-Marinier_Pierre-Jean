@@ -5,8 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="reet.css" />
+    <script
+      src="https://kit.fontawesome.com/b36407d020.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,12 +32,16 @@
   </head>
 
   <body>
+    <!-- HEADER -->
+
     <header class="presentation">
       <div class="logo">
         <div class="title">
           <img src="/images_booki/logo/booki.png" alt="logo" />
         </div>
       </div>
+
+      <!-- NAV -->
       <nav>
         <div class="liens">
           <div class="link_hebergement_marseilles">
@@ -47,6 +55,8 @@
       </nav>
     </header>
 
+    <!-- RESEARCH -->
+
     <section class="button_search">
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
 
@@ -54,17 +64,19 @@
 
       <div class="button">
         <div class="icon_localisation">
-          <img src="/images_booki/composants/vector.png" alt="pointeur" />
+          <i class="fa-solid fa-location-dot"></i>
         </div>
         <div class="search">
           <input type="search" id="site-search" name="searching" />
         </div>
 
         <div class="search_button">
-          <button type="submit"><i class="searchs">Rechercher</i></button>
+          <button type="submit" class="searchs">Rechercher</button>
         </div>
       </div>
     </section>
+
+    <!-- FILTERS -->
 
     <section class="filtres">
       <div class="filter">
@@ -122,6 +134,10 @@
 
       <p>Plus de 500 logements sont disponibles dans cette ville</p>
     </section>
+
+    <p id="wiwi"></p>
+
+    <!-- HERBERGEMENT MARSEILLES -->
 
     <div class="hôtel_marseilles">
       <section id="hébergement_marseilles">
@@ -413,6 +429,7 @@
         <h3>Afficher plus</h3>
       </section>
 
+      <!-- LES PLUS POPULAIRES -->
       <section id="populaires">
         <div class="title_les_plus_populaires">
           <h2>Les plus populaires</h2>
@@ -568,7 +585,7 @@
       </section>
     </div>
 
-    <!-- PARTIE ACTIVITES A MARSEILLES -->
+    <!-- ACTIVITES A MARSEILLES -->
 
     <div class="activité_title">
       <h1>Activités à Marseilles</h1>
@@ -643,7 +660,7 @@
 
     <!-- FOOTER -->
 
-    <p></p>
+    <!-- <p></p>
 
     <p id="demo"></p>
     <script>
@@ -663,7 +680,18 @@ Inner Width: ${this.innerWidth}
       }
 
       winSize();
+    </script> -->
+
+    <script>
+      window.addEventListener("resize", function (event) {
+        let p = "Width: " + window.innerWidth;
+        let o = "Height: " + window.innerHeight;
+        var i = document.getElementById("wiwi");
+        i.innerHTML = p + " " + o;
+      });
     </script>
+    <p id="wiwi"></p>
+
     <footer>
       <div class="bandeau">
         <div class="a_propos">
