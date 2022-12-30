@@ -227,6 +227,7 @@ body {
   text-align: center;
   border-color: #f2f2f2;
   border-style: solid;
+  outline: none;
 }
 
 .search_button {
@@ -257,13 +258,41 @@ body {
   background-color: #0084ff;
   cursor: pointer;
 }
+
+.search_button .loupe {
+  display: none;
+}
 /* MOBILE */
 
 @media screen and (max-width: 767px) {
+  .search_button .loupe {
+    display: block;
+    background-color: #0065fc;
+    color: white;
+    width: 100%;
+    border: 0px solid #f2f2f2;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    height: inherit;
+  }
+
+  .loupe:hover {
+    cursor: pointer;
+  }
+
+  .loupe:active {
+    background-color: #0084ff;
+    cursor: pointer;
+  }
   .button_search h1 {
     padding-top: 30px;
   }
-
+  .search_button .searchs {
+    display: none;
+  }
   .button_search {
     padding-left: 20px;
   }
@@ -299,7 +328,19 @@ body {
   font-size: 17px;
   line-height: 20px;
 }
+.quatre_filtres {
+  display: flex;
 
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+
+  padding-right: 20px;
+
+  text-align: center;
+  align-items: center;
+  gap: 40px;
+}
 .e {
   position: relative;
   display: flex;
@@ -345,21 +386,24 @@ body {
 
 @media screen and (max-width: 991px) {
   body {
-    background: cornflowerblue;
+    /* background: cornflowerblue; */
   }
 
   .filtres {
     position: relative;
 
-    justify-content: space-evenly;
-    gap: 20px;
-    flex-wrap: nowrap;
+    /* justify-content: space-evenly; */
+    gap: 2%;
+    /* flex-wrap: nowrap; */
     padding-left: 20px;
+  }
+
+  .quatre_filtres {
+    gap: 20px;
   }
 
   .filter p {
     display: flex;
-    padding-right: 10px;
   }
 }
 
@@ -389,17 +433,23 @@ body {
 
   .e {
     align-items: center;
-    padding: 14px 10px 14px 10px;
-
+    /* padding: 14px 10px 14px 10px; */
+    justify-content: center;
     font-weight: 700;
     font-size: 15px;
     line-height: 16px;
+    max-width: 250px;
   }
 
   .information {
     position: relative;
     padding: 20px;
     padding-top: 20px;
+  }
+  .quatre_filtres {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    padding: 0 5% 0 5%;
   }
 }
 /* SECTION MARSEILLES */
@@ -526,18 +576,34 @@ body {
     width: 100%;
     border-radius: 0px;
     background-color: white;
+    padding: 0 20px 40px 20px;
   }
 
   .hôtel_marseilles {
     flex-wrap: wrap-reverse;
     padding-right: 0px;
     padding-left: 0px;
-    gap: 00px;
+    gap: 0px;
+  }
+  #hébergement_marseilles h2 {
+    padding-top: 20px;
+    margin: auto;
   }
 
   .six_rectangles {
     display: flex;
     flex-direction: column-reverse;
+    padding: 0px;
+    padding-top: 20px;
+    gap: 20px;
+    max-width: 400px;
+    margin: auto;
+  }
+
+  #hébergement_marseilles h3 {
+    color: white;
+    padding: 0px;
+    padding-top: 20px;
   }
 }
 
@@ -649,16 +715,22 @@ body {
 
 @media screen and (max-width: 767px) {
   #populaires {
-  }
-
-  #populaires {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background: #f2f2f2;
     width: 100%;
     border-radius: 0px;
-
+    padding: 0 20px 0 20px;
     align-items: stretch;
+  }
+
+  .trois_rectangles {
+    flex-direction: column;
+    padding: 0px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    max-width: 400px;
+    margin: auto;
   }
 }
 
@@ -740,6 +812,40 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .activité_title {
+    padding: 0 20px 0 20px;
+  }
+  .activité_title h1 {
+    padding: 0;
+  }
+  .activités {
+    padding: 20px 20px 20px 20px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    padding: 0px;
+    padding-top: 20px;
+
+    margin: auto;
+  }
+  .liens_activity {
+    width: 400px;
+    height: 200px;
+    padding: 0px;
+    margin: auto;
+  }
+  .image {
+    height: 75%;
+  }
+  .image2 {
+    height: 75%;
+  }
+  .lieux {
+    padding-top: 10px;
+  }
+}
+
 /* FOOTER */
 
 footer {
@@ -810,6 +916,6 @@ footer {
 
 @media screen and (max-width: 767px) {
   body {
-    background: rgba(84, 6, 87, 0.514);
+    /* background: rgba(84, 6, 87, 0.514); */
   }
 }
