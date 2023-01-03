@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border-left: 50%;
 }
 
 a,
@@ -45,7 +44,6 @@ body {
 .liens {
   position: relative;
   display: flex;
-  /* gap: 67px; */
   justify-content: space-around;
   padding-right: 77px;
   padding-left: 77px;
@@ -538,11 +536,21 @@ body {
   margin-top: 7px;
 }
 
-.star {
+.canebière .star {
   padding: 1px;
   margin-left: 16px;
   margin-top: 7px;
   padding-bottom: 8px;
+  gap: 10px;
+  color: #0065fc;
+}
+.star i {
+  font-size: 1vh;
+}
+
+.star i:last-child {
+  font-size: 1vh;
+  color: #f2f2f2;
 }
 
 /* TABLETTE */
@@ -675,6 +683,26 @@ body {
   height: 144px;
   align-items: center;
   object-fit: cover;
+}
+
+.text .star {
+  padding-left: 0px;
+}
+
+.text .star {
+  padding: 1px;
+  margin-top: 7px;
+  padding-bottom: 8px;
+  gap: 10px;
+  color: #0065fc;
+}
+.text .star i {
+  font-size: 1vh;
+}
+
+.text .star i:last-child {
+  font-size: 1vh;
+  color: #f2f2f2;
 }
 
 /* TABLETTE */
