@@ -76,7 +76,14 @@ body {
   padding-left: 49.45px;
   padding-right: 49.45px;
   padding-top: 44px;
-  /* margin-right: 77px; */
+}
+
+.link_hebergement_marseilles p a:hover {
+  color: #0065fc;
+}
+
+.link_activités_marseilles p a:hover {
+  color: #0065fc;
 }
 
 .link_activités_marseilles:hover {
@@ -87,6 +94,7 @@ body {
   border-top: 2px;
   border-top-style: solid;
 }
+
 /* MOBILE */
 
 @media screen and (max-width: 767px) {
@@ -294,10 +302,6 @@ body {
   .button_search {
     padding-left: 20px;
   }
-  .button_search h2 {
-  }
-  .button {
-  }
 }
 
 /* FILTERS */
@@ -309,7 +313,7 @@ body {
   width: 100%;
   padding-top: 46px;
   padding-right: 20px;
-  padding-left: 50px;
+  padding-left: 40px;
   text-align: center;
   align-items: center;
   /* justify-content: space-evenly; */
@@ -351,6 +355,7 @@ body {
   border: 2px solid #d9d9d9;
   border-radius: 25px;
   gap: 10px;
+  cursor: pointer;
 }
 
 .information {
@@ -358,7 +363,7 @@ body {
   display: flex;
   flex-direction: row;
   position: relative;
-  padding-left: 69px;
+  padding-left: 50px;
   align-items: center;
   gap: 10px;
   padding-top: 54px;
@@ -383,10 +388,6 @@ body {
 /* TABLETTE */
 
 @media screen and (max-width: 991px) {
-  body {
-    /* background: cornflowerblue; */
-  }
-
   .filtres {
     position: relative;
 
@@ -455,7 +456,7 @@ body {
 .hôtel_marseilles {
   position: relative;
   display: flex;
-  padding-left: 50px;
+  padding-left: 40px;
   gap: 2%;
   padding-top: 40px;
   padding-right: 40px;
@@ -770,7 +771,7 @@ body {
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
-  padding-left: 50px;
+  padding-left: 80px;
   padding-top: 60px;
   padding-bottom: 18.47px;
 }
@@ -780,8 +781,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .activity {
@@ -879,7 +880,7 @@ body {
 footer {
   display: flex;
   align-items: center;
-  padding-left: 50px;
+  padding-left: 40px;
   padding-top: 61px;
   padding-right: 50px;
   justify-content: center;
@@ -942,8 +943,8 @@ footer {
 
 /* Breackpoint mobile */
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
   body {
-    /* background: rgba(84, 6, 87, 0.514); */
+    background: rgba(84, 6, 87, 0.514);
   }
-}
+} */
