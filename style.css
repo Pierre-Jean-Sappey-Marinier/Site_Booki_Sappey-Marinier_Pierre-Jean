@@ -840,6 +840,18 @@ body {
     padding-top: 6px;
   }
 }
+@media screen and (max-width: 991px) {
+  .image2 {
+    width: 100%;
+    object-fit: cover;
+    height: 82%;
+  }
+  .image {
+    width: 100%;
+    object-fit: cover;
+    height: 82%;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .activité_title {
