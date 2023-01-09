@@ -369,7 +369,7 @@ body {
   padding-top: 54px;
 }
 
-.information img {
+.information svg {
   position: relative;
   box-sizing: content-box;
   border-style: solid;
