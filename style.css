@@ -751,7 +751,7 @@ body {
 
 /* ACTIVITES */
 
-.activité_title h1 {
+.activité_title h2 {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -840,7 +840,7 @@ body {
   .activité_title {
     padding: 0 20px 0 20px;
   }
-  .activité_title h1 {
+  .activité_title h2 {
     padding: 0;
   }
   .activités {
@@ -905,7 +905,7 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-  .a_propos h1 {
+  .a_propos h2 {
     padding-bottom: 10px;
     padding-top: 20px;
   }
@@ -923,7 +923,7 @@ footer {
   justify-content: space-evenly;
 }
 
-.a_propos h1 {
+.a_propos h2 {
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
