@@ -96,7 +96,6 @@ body {
 }
 
 /* MOBILE */
-
 @media screen and (max-width: 767px) {
   .presentation {
     display: flex;
@@ -130,6 +129,16 @@ body {
     border-bottom: 3px;
     border-bottom-style: solid;
     border-bottom-color: transparent;
+    color: #0065fc;
+    border-bottom: 3px;
+    border-bottom-style: solid;
+  }
+  .link_hebergement_marseilles a {
+    color: #0065fc;
+  }
+  .link_hebergement_marseilles:hover {
+    border-top-color: transparent;
+    border-top: 0px;
   }
 
   .link_activités_marseilles {
@@ -140,30 +149,24 @@ body {
     border-bottom: 3px;
     border-bottom-style: solid;
     border-bottom-color: transparent;
+    color: #d9d9d9;
+    border-bottom: 3px;
+    border-bottom-style: solid;
+  }
+  .link_hebergement_marseilles p a {
+    color: black;
   }
   .link_activités_marseilles:hover {
-    color: #0065fc;
-    position: relative;
-    color: #0065fc;
-    border-top-color: #0065fc;
-    border-bottom: 3px;
-    border-bottom-style: solid;
-    color: #0065fc;
-    border-top-color: #0065fc;
     border-top: 0px;
-    border-top-style: none;
+    border-bottom-style: solid;
+    border-bottom-color: #d9d9d9;
+    color: #d9d9d9;
   }
-  .link_hebergement_marseilles:hover {
-    color: #0065fc;
-    position: relative;
-    color: #0065fc;
-    border-top-color: #0065fc;
-    border-bottom: 3px;
-    border-bottom-style: solid;
-    color: #0065fc;
-    border-top-color: #0065fc;
+  .link_activités_marseilles p a:hover {
     border-top: 0px;
-    border-top-style: none;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    color: #000000;
   }
 }
 
@@ -747,6 +750,15 @@ body {
     max-width: 400px;
     margin: auto;
   }
+  .star i {
+    font-size: 100%;
+  }
+  .star {
+    font-size: 100%;
+  }
+  .text .star i {
+    font-size: 100%;
+  }
 }
 
 /* ACTIVITES */
@@ -854,9 +866,9 @@ body {
     margin: auto;
   }
   .liens_activity {
-    width: 400px;
+    width: 100%;
     height: 200px;
-    padding: 0px;
+    padding: 0px 20px 0 20px;
     margin: auto;
   }
   .image {
@@ -917,21 +929,28 @@ footer {
     padding-top: 61px;
     padding-right: 0;
   }
-}
 
-.a_propos {
-  justify-content: space-evenly;
-}
+  .a_propos {
+    justify-content: space-evenly;
+  }
 
-.a_propos h2 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-}
+  .a_propos h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+  }
 
-.a_propos p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  padding-bottom: 12px;
+  .a_propos p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 12px;
+  }
+
+  .star i {
+    font-size: 100%;
+  }
+  .star {
+    font-size: 100%;
+  }
 }
